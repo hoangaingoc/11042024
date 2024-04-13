@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4</title>
+</head>
+<body>
+<!--
+    Viết chương trình chu vi hình tròn
+    C=2R*Pi; Pi=3.14
+-->
+<input type="number" placeholder="Nhập bán kính" id="r">
+<br>
+<button onclick="KQ()">Kết quả</button>
+<p id="s">Diện tích hình tròn: </p>
+<p id="c">Chu vi hình tròn: </p>
+<script>
+    function KQ() {
+        let r = document.getElementById("r").value;
+        let s = 3.14*r*r;
+        let c = 2*r*3.14;
+        document.getElementById("s").innerHTML="Diện tích hình tròn: " + s;
+        document.getElementById("c").innerHTML="Chu vi hình tròn: " + c;
+    }
+</script>
+</body>
+</html>

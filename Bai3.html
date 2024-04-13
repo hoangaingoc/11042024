@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<!--
+    Viết chương trình tính diện tích hình tròn
+    s=Pi*R^2 ; Pi=3.14
+-->
+    <input type="number" placeholder="Nhập bán kính" id="r">
+    <br>
+    <button onclick="KQ()">Kết quả</button>
+    <p id="s">Diện tích hình tròn: </p>
+<script>
+    function KQ() {
+        let r = document.getElementById("r").value;
+        let s = 3.14*r*r;
+        document.getElementById("s").innerHTML="Diện tích hình tròn: " + s;
+    }
+</script>
+</body>
+</html>

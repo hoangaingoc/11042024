@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+<input type="number" placeholder="Nhập độ C" id="doC">
+<br>
+<button onclick="KQ()">Kết quả</button>
+<script>
+    function KQ() {
+        let doC = document.getElementById("doC").value;
+//   C/5 = (F-32)/9
+        let f = doC * 1 / 5 * 9 + 32;
+        document.write("Độ F: " + f);
+    }
+</script>
+</body>
+</html>
